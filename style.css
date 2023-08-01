@@ -1,11 +1,13 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 
 body {
     background: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
 }
 
 body,
@@ -89,20 +91,31 @@ fieldset legend {
     flex-direction: column;
 }
 
+.input-wrapper label .checkbox-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #4E4958;
+}
+
+
 .input-wrapper label span {
     margin-left: 12px;
     font-size: 12px;
     line-height: 20px;
-    color: #6c6a71;
+    color: #a9a7af;
 }
 
+
+
 .input-wrapper label span:hover {
-    color: #a9a7af;
+    color: #7f7e80;
 }
 
 .input-wrapper input,
 .input-wrapper textarea,
 .input-wrapper select {
+    background: #FAFAFC;
     border-radius: 8px;
     height: 56px;
     padding: 0 24px;
@@ -137,15 +150,12 @@ fieldset legend {
     position: relative;
 }
 
-
-.input-wrapper label,
 .checkbox-wrapper label {
     font-size: 14px;
     line-height: 24px;
     color: #4E4958;
     margin-bottom: 8px;
 }
-
 
 .checkbox-wrapper label {
     display: flex;
@@ -171,7 +181,7 @@ fieldset legend {
     border-radius: 8px;
 }
 
-.checkbox-wrapper input:checked+label::before {
+.checkbox-wrapper input:checked + label::before {
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
 }
 
